@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        <label for="score">Enter your score:</label>
+        <input type="number" id="score" name="score" min="0">
+        <label for="gradingTotal">Choose grading total:</label>
+        <select id="gradingTotal" name="gradingTotal">
+            <option value="200">200</option>
+            <option value="400">400</option>
+            <option value="1800">1800</option>
+        </select>
+        <button onclick="calculateGrade()">Calculate</button>
+        <button onclick="clearScore()">Clear</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
